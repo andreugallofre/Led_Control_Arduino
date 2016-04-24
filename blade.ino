@@ -23,7 +23,7 @@ void setup() {
 void loop() {
 
 run_blade();
-run_out();
+run_ball();
 
 }
 
