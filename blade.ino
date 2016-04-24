@@ -4,7 +4,11 @@
  
 Adafruit_NeoPixel leds = Adafruit_NeoPixel(NUMLEDS, PIN, NEO_GRB + NEO_KHZ800);
 
+//VECTOR DECLARATION
+
 int blade[16] = {1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1}; //Vector with blade shape
+
+//SETUP OF ARDUINO, OBJECTS...
 
 void setup() {
 
@@ -14,12 +18,17 @@ void setup() {
   delay(500);       
 }
 
+//LOOP CODE
+
 void loop() {
 
 run_blade();
 run_out();
 
 }
+
+//FUCNTIONS
+
 void off(){ //Function to turn off all leds
   for (int i=0; i<NUMLEDS;i++)leds.setPixelColor(i, leds.Color(0, 0, 0));
   leds.show(); 
@@ -46,7 +55,3 @@ for(int i=0; i<NUMLEDS ;i++){
   }
   delay(300);
 }
-
-
-
-
