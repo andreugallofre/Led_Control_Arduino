@@ -6,7 +6,7 @@ Adafruit_NeoPixel leds = Adafruit_NeoPixel(NUMLEDS, PIN, NEO_GRB + NEO_KHZ800);
 
 //VECTOR DECLARATION
 
-int blade[16] = {1,0,1,0,0,0,0,1,0,0,1,1,1,0,0,1}; //Matrix with blade shape
+int blade[16] = {1,0,1,0,0,0,0,1,1,0,1,1,1,1,0,0}; //Matrix with blade shape
 
 //SETUP OF ARDUINO, OBJECTS...
 
