@@ -12,7 +12,7 @@ void setup() {
   leds.begin(); // Initialize 'leds' object
   off();        // Turn off all leds
   leds.show();  // Comit changes to leds
-  delay(500); 
+  delay(500);   // Delay on turn on leds?
 }
 
 void loop() {
